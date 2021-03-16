@@ -1,0 +1,11 @@
+name: schedule
+on: push
+  branch:
+    bugfix 
+jobs: 
+  build:
+    name: 'build'
+      runs-on: ubuntu
+on:
+  schedule: 
+    - cron: "1 2 * * *"
